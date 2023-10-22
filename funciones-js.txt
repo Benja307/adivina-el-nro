@@ -1,0 +1,6 @@
+.querySelector() - toma un parámetro (un selector CSS) del cual quisieramos tener una referencia.
+
+Por ejemplo: let guessField = document.querySelector(".guessField"), crea una variable guessField en la cual almacenamos una referencia al objeto HTML con la class="guessField", que en nuestro caso es un campo de texto.
+Un método disponible para elementos input es .focus() que lo que hace es enfocar el cursor en el campo de texto al que se le aplique. Vale aclarar que este método solo está disponible para los elementos input.
+Por ejemplo: como en la variable guessField ya tenemos almacenado una referencia a un input, podemos aplicarle el método .focus de la siguiente manera, guessField.focus(); al escribir está línea de código, automáticamente el campo con la class="guessField será efocado".
+

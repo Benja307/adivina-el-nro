@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;600;800;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+:root{
+    --primary: white;
+    --secondary: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    transition: .5s;
+}
+
+.bi{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    transition: .5s;    
+}
+
+.bi:hover{
+    cursor: pointer;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro h1{
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.intro p{
+    width: 80vw;
+    text-align: center;
+    font-size: 1.3rem;
+    transition: .5s;
+}
+
+form input[type="number"] {
+    margin: 5px;
+    width: 60vw;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background-color: var(--primary);
+    color: var(--secondary);
+    transition: .5s;
+}
+
+form input[type="submit"]{
+    width: 5rem;
+    font-size: 1.2rem;
+    margin: 5px 0;
+    border: 1px solid black;
+    background-color: var(--primary);
+    color: var(--secondary);
+    transition: .5s;
+}
+
+form input[type="submit"]:hover{
+    background-color: var(--primary);
+    color: var(--secondary);
+    box-shadow: 5px 5px 10px var(--secondary);
+    cursor: pointer;
+}
+
+form input{
+    height: 3rem;
+}
+
+.guesses{
+    margin: 3rem 0 0 0;
+    font-size: 1.2rem;
+    transition: .5s;
+}
+
+.lastResult{
+    padding: 0.1rem;
+    font-size: 0.9rem;
+    transition: .5s;
+}
+
+.reset-wh{
+    border: 1px solid black;
+    background-color: var(--primary);
+    width: 15rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--secondary);
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.reset-wh:hover{
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+}
+
+.reset-bl{
+    border: 1px solid white;
+    background-color: var(--secondary);
+    width: 15rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--primary);
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.reset-bl:hover{
+    box-shadow: 5px 5px 5px white;
+    cursor: pointer;
+}
+
+@media (max-width:450px){
+    body{
+        padding: 10px;
+    }
+    
+    .intro h1{
+        font-size: 2rem;
+        margin: 40px 0 10px 0;
+    }
+    
+    .intro p{
+        width: 90vw;
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input[type="number"]{
+        margin: 5px 0;
+        width: 90vw;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:430px){
+    .intro h1{
+        font-size: 1.5rem;
+    }
+    
+    .intro p{
+        font-size: .8rem;
+    }
+    
+    form input[type="number"]{
+        height: 2.5rem;
+    }
+
+    form input[type="submit"]{
+        height: 2rem;
+    }
+}
+
+@media (max-width:350px){
+    .intro h1{
+        font-size: 1.2rem;
+    }
+    
+    .intro p{
+        font-size: .6rem;
+    }
+    
+    form input[type="number"]{
+        height: 2rem;
+    }
+
+    form input[type="submit"]{
+        height: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .guesses{
+        font-size: 1rem;
+    }
+}
